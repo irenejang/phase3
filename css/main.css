@@ -1,0 +1,508 @@
+/* ---------------------------------------------
+General 
+--------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-family: 'Titillium Web', 'Helvetica', Arial, sans-serif;
+}
+
+/* ---------------------------------------------
+Header 
+--------------------------------------------- */
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 70px;
+	line-height: 70px;
+	background: #fff;
+}
+
+.header-logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	background: #f63c3c;
+}
+
+.header-logo img {;
+	height: 46px;
+	width: 25px;
+	margin: 12px 22px;
+}
+
+.main-nav {
+	position: fixed;
+	top: 0;
+	display: inline-block;
+	width: 75%;
+	margin: 0 auto; left:0px; right: 0px;
+	text-align: center;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin: 0 2em;
+	color: black;
+	opacity: 0.5;
+}
+
+li.nav-active {
+	color: #f63c3c;
+	height: 70px;
+	border-bottom: 4px solid #f63c3c;
+	opacity: 1;
+}
+
+.header-social {
+	position: fixed;
+	right: 15px;
+	height: 70px;
+	line-height: 70px;
+}
+
+.header-social li {
+	color: #929292;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+/* ---------------------------------------------
+Hero 
+--------------------------------------------- */
+
+.hero {
+	width: 100%;
+	height: 825px;
+	margin: 0 auto;
+	padding-top: 200px;
+	background-image: url('../img/hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.active-hero {
+	/*position: relative;	*/
+	text-align: center;
+	margin: 0 auto;
+}
+
+.active-hero h1 {
+	color: white;
+	font-size: 5.5em;
+	font-family: 'Teko', 'Helvetica', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: .15em;
+	width: 70%;
+	margin: 70px auto 0;
+	line-height: 1.25;
+}
+
+.active-hero p {
+	font-weight: 300;
+	color: white;
+	line-height: 1.4;
+	opacity: .7;
+	width: 550px;
+	max-width: 70%;
+	margin: 0 auto 2em;
+}
+
+.hero div:not(.active-hero) {
+	display: none;
+}
+
+
+.more-button-white {
+	color: black;
+	width: 11em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .75em .5em;
+	letter-spacing: .15em;
+	display: block;
+	margin: 1.5em auto;
+	background: white;
+	font-family: 'Teko', 'Helvetica', Arial, sans-serif;
+}
+
+.hero nav.carousel-nav ul {
+	text-align: center;
+	margin: 4em auto 0;
+}
+
+.hero nav.carousel-nav li {
+	display: inline-block;
+	width: 2em;
+	height: .2em;
+	background: white;
+	margin: 6.5em .15em;
+	cursor: pointer;
+}
+
+.hero .carousel-nav li:not(.active) {
+	opacity: .2;
+}
+
+/* ---------------------------------------------
+Highlighted Projects 
+--------------------------------------------- */
+
+section.highlighted-projects {
+	float: left;
+	width: 50%;
+	background-color: #fafafa;
+	height: 800px;
+}
+
+.highlighted-projects div {
+	padding: 9% 9% 9% 35%;
+}
+
+.highlighted-projects p:first-child {
+	color: #555555;
+	line-height: 1.4;
+	margin-bottom: 2em;
+}
+
+h2 {
+	color: #30282a;
+	font-family: 'Teko', 'Helvetica', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .15em;
+	font-size: 4em;
+}
+
+.highlighted-projects h2 {
+	margin: .5em 0 .75em;
+}
+
+.highlighted-projects ul {
+	font-size: 0;
+}
+
+.highlighted-projects li {
+	display: inline;
+}
+
+.highlighted-projects img {
+	width: 33.333333%;
+}
+
+div.more-wrapper {
+	padding: 2em 10% 1.5em 35%;
+}
+
+.more-wrapper p {
+	font-size: .75em;
+	color: #555555;
+}
+
+.more-button {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+	width: 11em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .75em .5em;
+	letter-spacing: .2em;
+	display: block;
+	margin-bottom: 1.5em;
+	background: #f63c3c;
+	font-family: 'Teko', 'Helvetica', Arial, sans-serif;
+}
+
+/* ---------------------------------------------
+Featured Projects 
+--------------------------------------------- */
+
+section.featured-projects {
+	float: right;
+	width: 50%;
+	height: 800px;
+	overflow: hidden;
+	background-image: url('../img/featured.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	}
+
+.featured-projects ul {
+	padding-left: 10%;
+	padding-top: 450px;
+}
+
+.featured-projects article:not(.active) {
+	display: none;
+}
+
+.featured b, 
+.featured h3 {
+	font-family: 'Teko', 'Helvetica', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .1em;
+
+}
+
+.featured b {
+	font-size: 1.5em;
+	color: rgba(255, 255, 255, .3);
+}
+
+.featured h3 {
+	font-size: 3em;
+	color: white;
+	margin: .4em 0;
+	max-width: 75%;
+}
+
+.featured p {
+	color: rgba(255, 255, 255, .7);
+	line-height: 1.4;
+	width: 50%;
+	font-size: .8em;
+}
+
+/* REPEATED */
+
+.featured-projects nav.carousel-nav ul {
+	margin: 0em;
+}
+
+.featured-projects nav.carousel-nav li {
+	display: inline-block;
+
+	width: 2em;
+	height: .2em;
+	background: white;
+	margin: 0em;
+	cursor: pointer;
+}
+
+.carousel-nav li:not(.active) {
+	opacity: .2;
+}
+
+/* ---------------------------------------------
+Our History
+--------------------------------------------- */
+
+
+.history div.wrapper {
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 100px;
+	padding: 100px 0 0 18%;
+}
+
+.history div.wrapper p {
+	color: #555555;
+	margin: 1em 0;
+	font-size: .9em;
+	line-height: 1.4;
+}
+
+.history a.more-button {
+	margin: 2em 0;
+}
+
+.history img {
+	height: 475px;
+	margin-left: 150px;
+}
+
+.history aside {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.history aside li {	
+	display: inline-block;
+	margin: 0 7%;
+}
+
+.history aside img {
+	height: 35px;
+	display: block;
+	margin: .5em auto;
+}
+
+.history aside b {
+	color: #f63c3c;
+	font-family: 'Teko', 'Helvetica', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 4em;
+	display: block;
+	letter-spacing: .03em;
+}
+
+.history aside p {
+	color: rgba(53, 53, 53, .7);
+	font-size: .8em;
+	display: block
+}
+
+/* ---------------------------------------------
+Services
+--------------------------------------------- */
+
+section.services {
+	background: #f7f7f7;
+	padding-bottom: 75px;
+}
+
+section.services .wrapper {
+	padding: 100px 18%;
+}
+
+.services img {
+	width: 35px;
+	display: block;
+	margin: 1em 0;
+}
+
+.services ul {
+	margin: 0px auto 80px;
+}
+
+.services li {
+	width: 28%;
+	margin: 25px 42px;
+	margin-left: 0;
+	float: left;
+}
+
+h6 {
+	color: #30282a;
+	font-family: 'Teko', 'Helvetica', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.5em;
+	letter-spacing: .08em;
+	margin: .5em 0;
+
+}
+.services p {
+	color: #555555;
+	font-size: .8em;
+	line-height: 1.4;
+}
+
+.services .wrapper-1 {
+
+}
+
+/* ---------------------------------------------
+Call to Action
+--------------------------------------------- */
+
+aside.call-to-action {
+	text-align: center;
+	color: white;
+	width: 100%;
+	background: url('../img/cta.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 175px;
+	padding-top: 40px;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: .1em;
+	font-family: 'Teko', 'Helvetica', sans-serif;
+
+}
+
+.call-to-action p {
+	opacity: .7;
+	margin: .5em 0;
+	font-size: .8em;
+}
+
+.call-to-action a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Teko', 'Helvetica', sans-serif;
+	display: inline-block;
+	letter-spacing: .15em;
+	padding: 1.1em 0 .3em;
+	padding-bottom: .3em;
+	border-bottom: 3px solid white;
+
+}
+
+/* ---------------------------------------------
+Journal
+--------------------------------------------- */
+
+section.journal {
+	padding: 100px 18%;
+}
+
+.journal h2 {
+	margin-bottom: .6em;
+}
+
+/* ---------------------------------------------
+Clearfix
+--------------------------------------------- */
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
